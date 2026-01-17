@@ -1,0 +1,100 @@
+/* ---------- Global styles ---------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+/* ---------- Header ---------- */
+header {
+  width: 100%;
+  background-color: #1f2933;
+  color: white;
+  padding: 25px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+/* ---------- Main site container ---------- */
+.app {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* ---------- About section ---------- */
+aside {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+aside img {
+  display: inline-block;
+  margin: 0 auto 15px; /* centers image */
+  width: 160px;        /* adjust size as needed */
+  height: 260px;       /* make width and height equal */
+  border-radius: 150%;  /* makes it a perfect circle */
+  object-fit: cover;   /* ensures image scales and fills the circle nicely */
+}
+
+
+/* ---------- Article list ---------- */
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+/* ---------- Article card ---------- */
+article {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+article h3 {
+  margin-top: 0;
+}
+
+article small {
+  color: #6b7280;
+  display: block;
+  margin: 8px 0 15px;
+}
+/* Make links show pointer on hover */
+a {
+  cursor: pointer;
+}
+
+/* Optional: specifically for your post links */
+.post-link {
+  cursor: pointer;
+  color: #1d4ed8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.post-link:hover {
+  text-decoration: underline;
+}
